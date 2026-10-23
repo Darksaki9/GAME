@@ -193,19 +193,40 @@ B('Mat_StainlessSteel', -3.8, -3.7, 1.25, 1.3, 8.65, 8.9)
 O('Kitchen_Trash_1');  C('Mat_TrashBlack', -2.5, 8.6, 0.5, 0.5, 0, 0.85); C('Mat_TrashBlack', -2.5, 8.6, 0.54, 0.54, 0.85, 0.9)
 O('Kitchen_Trash_2');  C('Mat_TrashBlack', 4.8, 2.7, 0.5, 0.5, 0, 0.85);  C('Mat_TrashBlack', 4.8, 2.7, 0.54, 0.54, 0.85, 0.9)
 
-O('Dish_Sink_3_Compartment')
+# Unity mirrors OBJ X on import, so -X here shows up on the viewer's RIGHT in the editor (next to Kitchen_Trash_1)
+O('Dish_Sink_2_Compartment')
 B('Mat_StainlessSteel', -1.9, 1.5, 0, 0.75, 8.3, 9)
 B('Mat_StainlessSteel', -1.9, 1.5, 0.9, 1.3, 8.95, 9)              # backsplash
-B('Mat_StainlessSteel', -1.9, -1.3, 0.75, 0.9, 8.3, 8.95)          # left drainboard
-B('Mat_StainlessSteel', 0.9, 1.5, 0.75, 0.9, 8.3, 8.95)            # right drainboard
-for k in range(3):
-    x0 = -1.3 + k * 0.733
+B('Mat_StainlessSteel', -1.9, -0.566, 0.75, 0.9, 8.3, 8.95)        # wide drainboard (dish rack sits here)
+B('Mat_StainlessSteel', 0.9, 1.5, 0.75, 0.9, 8.3, 8.95)            # small drainboard by the mop sink
+for k in range(2):
+    x0 = -0.566 + k * 0.733
     B('Mat_StainlessSteel', x0, x0 + 0.733, 0.75, 0.95, 8.3, 8.38)
     B('Mat_StainlessSteel', x0, x0 + 0.733, 0.75, 0.95, 8.87, 8.95)
     B('Mat_StainlessSteel', x0, x0 + 0.05, 0.75, 0.95, 8.38, 8.87)
     B('Mat_StainlessDark', x0 + 0.05, x0 + 0.733, 0.74, 0.76, 8.38, 8.87)
     B('Mat_StainlessSteel', x0 + 0.33, x0 + 0.4, 0.95, 1.35, 8.88, 8.95)  # faucet
+    B('Mat_StainlessSteel', x0 + 0.33, x0 + 0.4, 1.29, 1.35, 8.68, 8.88)  # spout over the basin
 B('Mat_StainlessSteel', 0.85, 0.9, 0.75, 0.95, 8.38, 8.87)
+
+O('Dish_Rack')
+RX0, RX1 = -1.78, -0.72
+for z0, z1 in ((8.4, 8.43), (8.82, 8.85)):                         # long rails, bottom + top
+    for y in (0.9, 1.06):
+        B('Mat_StainlessSteel', RX0, RX1, y, y + 0.02, z0, z1)
+for x0, x1 in ((RX0, RX0 + 0.03), (RX1 - 0.03, RX1)):              # end rails + corner posts
+    for y in (0.9, 1.06):
+        B('Mat_StainlessSteel', x0, x1, y, y + 0.02, 8.43, 8.82)
+    for z in (8.4, 8.82):
+        B('Mat_StainlessSteel', x0, x1, 0.9, 1.08, z, z + 0.03)
+for k in range(9):                                                 # plate dividers
+    x = RX0 + 0.12 + k * 0.1
+    for z in (8.5, 8.74):
+        B('Mat_StainlessSteel', x, x + 0.015, 0.92, 1.02, z, z + 0.015)
+    B('Mat_StainlessSteel', x, x + 0.015, 0.905, 0.92, 8.43, 8.82)
+for k in range(6):                                                 # plates standing in the rack
+    x = RX0 + 0.16 + k * 0.1
+    B('Mat_CupWhite', x, x + 0.02, 0.92, 1.16, 8.5, 8.76)
 
 O('Mop_Sink')
 B('Mat_CupWhite', 1.7, 2.4, 0, 0.3, 8.4, 9)
