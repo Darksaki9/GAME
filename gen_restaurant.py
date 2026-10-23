@@ -125,21 +125,17 @@ for cx in (-4.2, 4.2):
         for fz in (1, -1):
             chair(cx, cz - fz * 0.65, 0, fz)
 
-# Center of the dining room: staggered 2-seat tables + a long shared table (walkways stay on both sides)
-for cx in (-2.4, 2.4):
-    n2 += 1; O(f'Table2_{n2}')
-    table(cx, -4.85, 0.7, 0.7)
-    for fz in (1, -1):
-        chair(cx, -4.85 - fz * 0.65, 0, fz)
-O('Shared_Table')
-C('Mat_TableTop', 0, -4.6, 1.0, 4.0, 0.72, 0.76)
-for cz in (-6.3, -2.9):
-    C('Mat_MetalLegs', 0, cz, 0.08, 0.08, 0.04, 0.72)
-    C('Mat_MetalLegs', 0, cz, 0.7, 0.5, 0, 0.04)
-for k in range(5):
-    cz = -6.2 + k * 0.8
-    chair(-0.78, cz, 1, 0)
-    chair(0.78, cz, -1, 0)
+# Center of the dining room: two long shared tables either side of a straight 2.4 m aisle (door -> cashier)
+for i, cx in enumerate((-2.3, 2.3), 1):
+    O(f'Shared_Table_{i}')
+    C('Mat_TableTop', cx, -4.6, 1.0, 4.0, 0.72, 0.76)
+    for cz in (-6.3, -2.9):
+        C('Mat_MetalLegs', cx, cz, 0.08, 0.08, 0.04, 0.72)
+        C('Mat_MetalLegs', cx, cz, 0.7, 0.5, 0, 0.04)
+    for k in range(5):
+        cz = -6.2 + k * 0.8
+        chair(cx - 0.78, cz, 1, 0)
+        chair(cx + 0.78, cz, -1, 0)
 
 nb = 0
 for xa, xb in ((-11.95, -10.35), (10.35, 11.95)):
