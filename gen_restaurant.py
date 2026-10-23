@@ -231,11 +231,6 @@ B(FW, 8.2, 12, 2.8, 2.9, 4.0, 9)             # roof
 B('Mat_StainlessDark', 8.32, 12, 0, 0.02, 4.12, 9)  # floor plate
 for z in (4.98, 6.1):
     B('Mat_StainlessSteel', 8.15, 8.37, 0, 2.2, z - 0.04, z + 0.04)  # door jambs
-for px in (9.0, 11.2):                       # inside rack along the back
-    for pz in (8.4, 8.9):
-        B('Mat_MetalLegs', px, px + 0.04, 0, 1.9, pz, pz + 0.04)
-for y in (0.3, 0.9, 1.5):
-    B('Mat_StainlessSteel', 9.0, 11.24, y, y + 0.03, 8.4, 8.94)
 O('Walk_In_Freezer_Door')                    # hinged at z 6.1, left open into the kitchen
 B(FW, 7.12, 8.2, 0, 2.18, 6.06, 6.16)
 B('Mat_StainlessSteel', 7.25, 7.33, 0.9, 1.3, 5.98, 6.06)
