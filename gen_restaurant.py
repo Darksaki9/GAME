@@ -80,6 +80,8 @@ for k in range(6):
 B('Mat_StainlessDark', 5.4, 6.6, 0.95, 0.98, 0.4, 0.65)                    # drip tray
 for k, cx in enumerate((6.9, 7.2, 7.5)):
     C('Mat_CupWhite', cx, 0.7, 0.18, 0.18, 0.95, 1.25 + 0.1 * k)           # cup stacks
+# turned 180 deg (mirrored about its own center z=0.65) so the crew serves from behind the counter
+objs[-1][1] = [(m, x0, x1, y0, y1, 1.3 - z1, 1.3 - z0) for m, x0, x1, y0, y1, z0, z1 in objs[-1][1]]
 
 def tray_stand(name, cx, cz):
     O(name)
