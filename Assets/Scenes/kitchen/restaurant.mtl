@@ -1,4 +1,4 @@
-# Wavefront MTL - Fast-food restaurant materials
+# Wavefront MTL - Cafe restaurant materials
 
 newmtl Mat_StainlessSteel
 Ka 0.200 0.200 0.200
@@ -90,41 +90,41 @@ illum 2
 
 newmtl Mat_WallsArchitectural
 Ka 0.200 0.200 0.200
-Kd 0.930 0.910 0.870
+Kd 0.950 0.920 0.850
 Ks 0.050 0.050 0.050
 Ns 10.0
 d 1
 illum 2
 
-newmtl Mat_KitchenFloorRed
+newmtl Mat_KitchenFloorSlate
 Ka 0.200 0.200 0.200
-Kd 0.550 0.200 0.150
+Kd 0.360 0.390 0.380
 Ks 0.150 0.150 0.150
 Ns 20.0
 d 1
 illum 2
 
-newmtl Mat_McRed
+newmtl Mat_AccentTeal
 Ka 0.200 0.200 0.200
-Kd 0.820 0.100 0.100
+Kd 0.130 0.420 0.420
 Ks 0.200 0.200 0.200
 Ns 30.0
 d 1
 illum 2
 
-newmtl Mat_McYellow
+newmtl Mat_AccentWood
 Ka 0.200 0.200 0.200
-Kd 1.000 0.760 0.050
-Ks 0.200 0.200 0.200
-Ns 30.0
+Kd 0.780 0.580 0.360
+Ks 0.150 0.150 0.150
+Ns 20.0
 d 1
 illum 2
 
-newmtl Mat_BoothRed
+newmtl Mat_BoothFabric
 Ka 0.200 0.200 0.200
-Kd 0.700 0.080 0.080
-Ks 0.300 0.300 0.300
-Ns 35.0
+Kd 0.200 0.480 0.440
+Ks 0.100 0.100 0.100
+Ns 15.0
 d 1
 illum 2
 

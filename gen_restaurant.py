@@ -1,4 +1,4 @@
-# Generates mcd_restaurant.obj/.mtl: a ~24 x 18 m fast-food restaurant made of named box parts.
+# Generates restaurant.obj/.mtl: a ~24 x 18 m cafe-style restaurant made of named box parts.
 # Same format as kitchen_scene.obj: one 'o' per piece of furniture so each can be moved in Unity.
 # Layout (top view): X -12..12, Z -9..9, Y up. Kitchen at +Z (back), lobby at -Z (front, entrance at z=-9).
 import sys, os
@@ -16,7 +16,7 @@ H = 3.5  # wall height
 W, F = 'Mat_WallsArchitectural', 'Mat_FloorTile'
 
 # ---------------- Room ----------------
-O('Floor_Kitchen');  B('Mat_KitchenFloorRed', -12, 12, -0.1, 0, 1.2, 9)
+O('Floor_Kitchen');  B('Mat_KitchenFloorSlate', -12, 12, -0.1, 0, 1.2, 9)
 O('Floor_Lobby');    B(F, -12, 12, -0.1, 0, -9, 1.2)
 O('Wall_Back');      B(W, -12.2, 12.2, 0, H, 9, 9.2)
 O('Wall_Kitchen_Left');  B(W, -12.2, -12, 0, H, 1.2, 9)
@@ -43,14 +43,14 @@ for side, (xa, xb) in (('L', (-1.25, 0)), ('R', (0, 1.25))):
     B('Mat_StainlessSteel', hx - 0.03, hx + 0.03, 0.8, 1.4, -9.2, -9.0)
 
 # Partition between lobby and kitchen; open above/through the front counter, 1 m crew gap at x -7..-6
-O('Partition_Left');   B(W, -12, -7, 0, H, 1.2, 1.4); B('Mat_McRed', -12, -7, 0, 0.9, 1.15, 1.2)
-O('Partition_Right');  B(W, 7.8, 12, 0, H, 1.2, 1.4); B('Mat_McRed', 7.8, 12, 0, 0.9, 1.15, 1.2)
-O('Counter_Header');   B(W, -7, 7.8, 3.0, H, 1.2, 1.4); B('Mat_McYellow', -7, 7.8, 3.0, 3.1, 1.15, 1.2)
+O('Partition_Left');   B(W, -12, -7, 0, H, 1.2, 1.4); B('Mat_AccentTeal', -12, -7, 0, 0.9, 1.15, 1.2)
+O('Partition_Right');  B(W, 7.8, 12, 0, H, 1.2, 1.4); B('Mat_AccentTeal', 7.8, 12, 0, 0.9, 1.15, 1.2)
+O('Counter_Header');   B(W, -7, 7.8, 3.0, H, 1.2, 1.4); B('Mat_AccentWood', -7, 7.8, 3.0, 3.1, 1.15, 1.2)
 
 # ---------------- Front of house ----------------
 O('Front_Counter')
-B('Mat_McRed', -6, 4, 0, 1.0, 0.45, 1.1)
-B('Mat_McYellow', -6, 4, 0.75, 0.85, 0.42, 0.45)          # accent stripe
+B('Mat_AccentTeal', -6, 4, 0, 1.0, 0.45, 1.1)
+B('Mat_AccentWood', -6, 4, 0.75, 0.85, 0.42, 0.45)          # accent stripe
 B('Mat_CountertopStone', -6.05, 4.05, 1.0, 1.05, 0.35, 1.15)
 B('Mat_CabinetBase', -6, 4, 0, 0.1, 0.5, 1.1)              # kick plate
 for i, x in enumerate((-3.0, 1.0), 1):
@@ -65,15 +65,15 @@ O('Menu_Boards')
 for x0, x1 in ((-5, -1.8), (-1.6, 1.6), (1.8, 5)):
     B('Mat_POSTerminalDark', x0, x1, 2.2, 3.0, 1.08, 1.15)        # frame
     B('Mat_MenuScreen', x0 + 0.05, x1 - 0.05, 2.25, 2.85, 1.06, 1.08)
-    B('Mat_McYellow', x0 + 0.05, x1 - 0.05, 2.85, 2.95, 1.06, 1.08)
+    B('Mat_AccentWood', x0 + 0.05, x1 - 0.05, 2.85, 2.95, 1.06, 1.08)
 
 O('Drink_Station')
-B('Mat_McRed', 4.3, 7.8, 0, 0.9, 0.3, 1.0)
+B('Mat_AccentTeal', 4.3, 7.8, 0, 0.9, 0.3, 1.0)
 B('Mat_CountertopStone', 4.25, 7.85, 0.9, 0.95, 0.25, 1.05)
 B('Mat_StainlessDark', 4.5, 5.2, 0.95, 1.25, 0.45, 0.95)                   # ice bin
 B('Mat_StainlessSteel', 4.55, 5.15, 1.2, 1.26, 0.5, 0.9)
 B('Mat_POSTerminalDark', 5.4, 6.6, 0.95, 1.75, 0.65, 0.98)                 # soda tower
-B('Mat_McYellow', 5.4, 6.6, 1.55, 1.75, 0.63, 0.65)                        # tower label strip
+B('Mat_AccentWood', 5.4, 6.6, 1.55, 1.75, 0.63, 0.65)                        # tower label strip
 for k in range(6):
     nx = 5.5 + k * 0.2
     B('Mat_StainlessSteel', nx, nx + 0.08, 1.3, 1.4, 0.55, 0.65)           # nozzles
@@ -90,19 +90,19 @@ def tray_stand(name, cx, cz):
         C('Mat_MetalLegs', cx + dx, cz - 0.25, 0.04, 0.04, 1.04, 1.5)
     C('Mat_StainlessSteel', cx, cz - 0.05, 0.95, 0.45, 1.5, 1.54)
     for k in range(4):
-        C('Mat_McRed', cx, cz - 0.05, 0.45, 0.35, 1.04 + k * 0.02, 1.055 + k * 0.02)  # tray stack
+        C('Mat_AccentTeal', cx, cz - 0.05, 0.45, 0.35, 1.04 + k * 0.02, 1.055 + k * 0.02)  # tray stack
 tray_stand('Tray_Return_Trash_1', -2.6, -8.6)
 tray_stand('Tray_Return_Trash_2', 2.6, -8.6)
 
 # ---------------- Dining ----------------
 def chair(cx, cz, fx, fz):  # (fx,fz) = direction the sitter faces (toward table)
-    C('Mat_McYellow', cx, cz, 0.45, 0.45, 0.42, 0.47)
+    C('Mat_AccentWood', cx, cz, 0.45, 0.45, 0.42, 0.47)
     for dx in (-0.19, 0.19):
         for dz in (-0.19, 0.19):
             C('Mat_MetalLegs', cx + dx, cz + dz, 0.035, 0.035, 0, 0.42)
     bx, bz = cx - fx * 0.2, cz - fz * 0.2
     sx, sz = (0.45, 0.05) if fz else (0.05, 0.45)
-    C('Mat_McRed', bx, bz, sx, sz, 0.47, 0.95)
+    C('Mat_AccentTeal', bx, bz, sx, sz, 0.47, 0.95)
 
 def table(cx, cz, sx, sz):
     C('Mat_TableTop', cx, cz, sx, sz, 0.72, 0.76)
@@ -128,9 +128,9 @@ for xa, xb in ((-11.95, -10.35), (10.35, 11.95)):
     for s in (-8.8, -6.5, -4.2, -1.9):
         nb += 1; O(f'Booth_{nb}')
         for z0, z1, back in ((s, s + 0.6, (s, s + 0.12)), (s + 1.5, s + 2.1, (s + 1.98, s + 2.1))):
-            B('Mat_BoothRed', xa, xb, 0, 0.45, z0, z1)
-            B('Mat_BoothRed', xa, xb, 0.45, 1.15, *back)
-            B('Mat_McYellow', xa, xb, 1.15, 1.2, *back)
+            B('Mat_BoothFabric', xa, xb, 0, 0.45, z0, z1)
+            B('Mat_BoothFabric', xa, xb, 0.45, 1.15, *back)
+            B('Mat_AccentWood', xa, xb, 1.15, 1.2, *back)
         tx0, tx1 = (xa, xb - 0.2) if xa < 0 else (xa + 0.2, xb)
         B('Mat_TableTop', tx0, tx1, 0.72, 0.76, s + 0.65, s + 1.45)
         C('Mat_MetalLegs', (tx0 + tx1) / 2, s + 1.05, 0.08, 0.08, 0, 0.72)
@@ -261,9 +261,9 @@ MATS = {  # name: (Kd rgb, Ks, Ns, d)
     'Mat_LightOakWood': ((0.82, 0.66, 0.45), 0.1, 15, 1), 'Mat_MetalLegs': ((0.25, 0.25, 0.27), 0.5, 60, 1),
     'Mat_CooktopDark': ((0.08, 0.08, 0.09), 0.4, 60, 1), 'Mat_BurnerMetal': ((0.30, 0.30, 0.32), 0.5, 50, 1),
     'Mat_POSTerminalDark': ((0.12, 0.12, 0.13), 0.3, 40, 1), 'Mat_POSScreenWhite': ((0.92, 0.95, 1.0), 0.5, 80, 1),
-    'Mat_FloorTile': ((0.86, 0.84, 0.80), 0.2, 25, 1), 'Mat_WallsArchitectural': ((0.93, 0.91, 0.87), 0.05, 10, 1),
-    'Mat_KitchenFloorRed': ((0.55, 0.20, 0.15), 0.15, 20, 1), 'Mat_McRed': ((0.82, 0.10, 0.10), 0.2, 30, 1),
-    'Mat_McYellow': ((1.00, 0.76, 0.05), 0.2, 30, 1), 'Mat_BoothRed': ((0.70, 0.08, 0.08), 0.3, 35, 1),
+    'Mat_FloorTile': ((0.86, 0.84, 0.80), 0.2, 25, 1), 'Mat_WallsArchitectural': ((0.95, 0.92, 0.85), 0.05, 10, 1),
+    'Mat_KitchenFloorSlate': ((0.36, 0.39, 0.38), 0.15, 20, 1), 'Mat_AccentTeal': ((0.13, 0.42, 0.42), 0.2, 30, 1),
+    'Mat_AccentWood': ((0.78, 0.58, 0.36), 0.15, 20, 1), 'Mat_BoothFabric': ((0.20, 0.48, 0.44), 0.1, 15, 1),
     'Mat_TableTop': ((0.62, 0.45, 0.30), 0.2, 25, 1), 'Mat_GlassWindow': ((0.70, 0.85, 0.92), 0.9, 120, 0.35),
     'Mat_MenuScreen': ((0.15, 0.10, 0.08), 0.5, 80, 1), 'Mat_CupWhite': ((0.97, 0.97, 0.96), 0.2, 20, 1),
     'Mat_TrashBlack': ((0.10, 0.10, 0.10), 0.1, 10, 1), 'Mat_Cardboard': ((0.66, 0.50, 0.32), 0.05, 8, 1),
@@ -287,8 +287,8 @@ def write(out_dir):
     assert len(names) == len(set(names)), 'duplicate object names'
     used = {b[0] for _, bs in objs for b in bs}
     assert used <= MATS.keys(), used - MATS.keys()
-    L = ['# Wavefront OBJ - Fast-food restaurant (24 x 18 m), generated by gen_mcd_restaurant.py',
-         '# Every object has its own o group for individual adjustment in Unity.', 'mtllib mcd_restaurant.mtl', '']
+    L = ['# Wavefront OBJ - Cafe restaurant (24 x 18 m), generated by gen_restaurant.py',
+         '# Every object has its own o group for individual adjustment in Unity.', 'mtllib restaurant.mtl', '']
     vi = 1
     for name, boxes in objs:
         assert boxes, name
@@ -312,12 +312,12 @@ def write(out_dir):
                 L.append('f ' + ' '.join(f'{vi+k}/{vi+k}/{ni}' for k in range(4)))
                 vi += 4
         L.append('')
-    open(os.path.join(out_dir, 'mcd_restaurant.obj'), 'w', newline='\n').write('\n'.join(L))
-    M = ['# Wavefront MTL - Fast-food restaurant materials', '']
+    open(os.path.join(out_dir, 'restaurant.obj'), 'w', newline='\n').write('\n'.join(L))
+    M = ['# Wavefront MTL - Cafe restaurant materials', '']
     for m, (kd, ks, ns, d) in MATS.items():
         M += [f'newmtl {m}', 'Ka 0.200 0.200 0.200', 'Kd %.3f %.3f %.3f' % kd, 'Ks %.3f %.3f %.3f' % (ks, ks, ks),
               f'Ns {ns:.1f}', f'd {d}', 'illum 2', '']
-    open(os.path.join(out_dir, 'mcd_restaurant.mtl'), 'w', newline='\n').write('\n'.join(M))
+    open(os.path.join(out_dir, 'restaurant.mtl'), 'w', newline='\n').write('\n'.join(M))
     print(len(objs), 'objects,', (vi - 1) // 4, 'faces')
 
 if __name__ == '__main__':
