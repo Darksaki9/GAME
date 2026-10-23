@@ -1,0 +1,193 @@
+# Wavefront MTL - Fast-food restaurant materials
+
+newmtl Mat_StainlessSteel
+Ka 0.200 0.200 0.200
+Kd 0.770 0.820 0.860
+Ks 0.600 0.600 0.600
+Ns 75.0
+d 1
+illum 2
+
+newmtl Mat_StainlessDark
+Ka 0.200 0.200 0.200
+Kd 0.480 0.550 0.600
+Ks 0.500 0.500 0.500
+Ns 50.0
+d 1
+illum 2
+
+newmtl Mat_CabinetBase
+Ka 0.200 0.200 0.200
+Kd 0.470 0.420 0.380
+Ks 0.100 0.100 0.100
+Ns 12.0
+d 1
+illum 2
+
+newmtl Mat_CountertopStone
+Ka 0.200 0.200 0.200
+Kd 0.840 0.860 0.880
+Ks 0.300 0.300 0.300
+Ns 40.0
+d 1
+illum 2
+
+newmtl Mat_LightOakWood
+Ka 0.200 0.200 0.200
+Kd 0.820 0.660 0.450
+Ks 0.100 0.100 0.100
+Ns 15.0
+d 1
+illum 2
+
+newmtl Mat_MetalLegs
+Ka 0.200 0.200 0.200
+Kd 0.250 0.250 0.270
+Ks 0.500 0.500 0.500
+Ns 60.0
+d 1
+illum 2
+
+newmtl Mat_CooktopDark
+Ka 0.200 0.200 0.200
+Kd 0.080 0.080 0.090
+Ks 0.400 0.400 0.400
+Ns 60.0
+d 1
+illum 2
+
+newmtl Mat_BurnerMetal
+Ka 0.200 0.200 0.200
+Kd 0.300 0.300 0.320
+Ks 0.500 0.500 0.500
+Ns 50.0
+d 1
+illum 2
+
+newmtl Mat_POSTerminalDark
+Ka 0.200 0.200 0.200
+Kd 0.120 0.120 0.130
+Ks 0.300 0.300 0.300
+Ns 40.0
+d 1
+illum 2
+
+newmtl Mat_POSScreenWhite
+Ka 0.200 0.200 0.200
+Kd 0.920 0.950 1.000
+Ks 0.500 0.500 0.500
+Ns 80.0
+d 1
+illum 2
+
+newmtl Mat_FloorTile
+Ka 0.200 0.200 0.200
+Kd 0.860 0.840 0.800
+Ks 0.200 0.200 0.200
+Ns 25.0
+d 1
+illum 2
+
+newmtl Mat_WallsArchitectural
+Ka 0.200 0.200 0.200
+Kd 0.930 0.910 0.870
+Ks 0.050 0.050 0.050
+Ns 10.0
+d 1
+illum 2
+
+newmtl Mat_KitchenFloorRed
+Ka 0.200 0.200 0.200
+Kd 0.550 0.200 0.150
+Ks 0.150 0.150 0.150
+Ns 20.0
+d 1
+illum 2
+
+newmtl Mat_McRed
+Ka 0.200 0.200 0.200
+Kd 0.820 0.100 0.100
+Ks 0.200 0.200 0.200
+Ns 30.0
+d 1
+illum 2
+
+newmtl Mat_McYellow
+Ka 0.200 0.200 0.200
+Kd 1.000 0.760 0.050
+Ks 0.200 0.200 0.200
+Ns 30.0
+d 1
+illum 2
+
+newmtl Mat_BoothRed
+Ka 0.200 0.200 0.200
+Kd 0.700 0.080 0.080
+Ks 0.300 0.300 0.300
+Ns 35.0
+d 1
+illum 2
+
+newmtl Mat_TableTop
+Ka 0.200 0.200 0.200
+Kd 0.620 0.450 0.300
+Ks 0.200 0.200 0.200
+Ns 25.0
+d 1
+illum 2
+
+newmtl Mat_GlassWindow
+Ka 0.200 0.200 0.200
+Kd 0.700 0.850 0.920
+Ks 0.900 0.900 0.900
+Ns 120.0
+d 0.35
+illum 2
+
+newmtl Mat_MenuScreen
+Ka 0.200 0.200 0.200
+Kd 0.150 0.100 0.080
+Ks 0.500 0.500 0.500
+Ns 80.0
+d 1
+illum 2
+
+newmtl Mat_CupWhite
+Ka 0.200 0.200 0.200
+Kd 0.970 0.970 0.960
+Ks 0.200 0.200 0.200
+Ns 20.0
+d 1
+illum 2
+
+newmtl Mat_TrashBlack
+Ka 0.200 0.200 0.200
+Kd 0.100 0.100 0.100
+Ks 0.100 0.100 0.100
+Ns 10.0
+d 1
+illum 2
+
+newmtl Mat_Cardboard
+Ka 0.200 0.200 0.200
+Kd 0.660 0.500 0.320
+Ks 0.050 0.050 0.050
+Ns 8.0
+d 1
+illum 2
+
+newmtl Mat_FreezerWhite
+Ka 0.200 0.200 0.200
+Kd 0.900 0.920 0.930
+Ks 0.300 0.300 0.300
+Ns 30.0
+d 1
+illum 2
+
+newmtl Mat_HeatLampGlow
+Ka 0.200 0.200 0.200
+Kd 1.000 0.550 0.150
+Ks 0.200 0.200 0.200
+Ns 20.0
+d 1
+illum 2
