@@ -219,10 +219,6 @@ for i, (x0, x1) in enumerate(((2.7, 5.1), (5.3, 7.7)), 1):
             B('Mat_MetalLegs', px, px + 0.04, 0, 2.0, pz, pz + 0.04)
     for k, y in enumerate((0.15, 0.6, 1.05, 1.5, 1.95)):
         B('Mat_StainlessSteel', x0, x1, y, y + 0.03, 8.45, 9)
-        if k < 4:
-            for j in range(4 - (k + i) % 2):
-                bx = x0 + 0.1 + j * 0.57
-                B('Mat_Cardboard', bx, bx + 0.45, y + 0.03, y + 0.33 - 0.04 * ((j + k) % 2), 8.5, 8.9)
 
 # ---------------- Walk-in freezer (x 8.2..12, z 4..9) ----------------
 O('Walk_In_Freezer')
@@ -240,8 +236,6 @@ for px in (9.0, 11.2):                       # inside rack along the back
         B('Mat_MetalLegs', px, px + 0.04, 0, 1.9, pz, pz + 0.04)
 for y in (0.3, 0.9, 1.5):
     B('Mat_StainlessSteel', 9.0, 11.24, y, y + 0.03, 8.4, 8.94)
-    for j in range(3):
-        B('Mat_Cardboard', 9.1 + j * 0.7, 9.6 + j * 0.7, y + 0.03, y + 0.35, 8.45, 8.9)
 O('Walk_In_Freezer_Door')                    # hinged at z 6.1, left open into the kitchen
 B(FW, 7.12, 8.2, 0, 2.18, 6.06, 6.16)
 B('Mat_StainlessSteel', 7.25, 7.33, 0.9, 1.3, 5.98, 6.06)
@@ -280,7 +274,7 @@ MATS = {  # name: (Kd rgb, Ks, Ns, d)
     'Mat_AccentWood': ((0.78, 0.58, 0.36), 0.15, 20, 1), 'Mat_BoothFabric': ((0.20, 0.48, 0.44), 0.1, 15, 1),
     'Mat_TableTop': ((0.62, 0.45, 0.30), 0.2, 25, 1), 'Mat_GlassWindow': ((0.70, 0.85, 0.92), 0.9, 120, 0.35),
     'Mat_MenuScreen': ((0.15, 0.10, 0.08), 0.5, 80, 1), 'Mat_CupWhite': ((0.97, 0.97, 0.96), 0.2, 20, 1),
-    'Mat_TrashBlack': ((0.10, 0.10, 0.10), 0.1, 10, 1), 'Mat_Cardboard': ((0.66, 0.50, 0.32), 0.05, 8, 1),
+    'Mat_TrashBlack': ((0.10, 0.10, 0.10), 0.1, 10, 1),
     'Mat_FreezerWhite': ((0.90, 0.92, 0.93), 0.3, 30, 1), 'Mat_HeatLampGlow': ((1.00, 0.55, 0.15), 0.2, 20, 1),
 }
 
