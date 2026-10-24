@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_tofu_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_tofu
+  displayNameThai: "\u0E40\u0E15\u0E49\u0E32\u0E2B\u0E39\u0E49"
+  displayNameEng: Tofu
+  nutritionRoleThai: "\u0E42\u0E1B\u0E23\u0E15\u0E35\u0E19\u0E08\u0E32\u0E01\u0E16\u0E31\u0E48\u0E27\u0E40\u0E2B\u0E25\u0E37\u0E2D\u0E07
+    \u0E44\u0E02\u0E21\u0E31\u0E19\u0E2D\u0E34\u0E48\u0E21\u0E15\u0E31\u0E27\u0E15\u0E48\u0E33"
+  category: 1
+  cookingRole: 1
+  calories: 76
+  carbohydrates: 1.9
+  protein: 8.1
+  fat: 4.8
+  fiber: 0.3
+  sodium: 7
+  costPerUnit: 12
+  isRawMeat: 0
+  safeCoreTempC: 0
+  heatSensitivity: 0.3
+  prefab: {fileID: 5729556232967859856, guid: 4e3af0a5e6abf8b43973c45448408d6d, type: 3}
+  themeColor: {r: 0.95, g: 0.95, b: 0.9, a: 1}

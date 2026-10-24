@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b433e294e24793b6e385b986645642, type: 3}
+  m_Name: Recipe_PlaNeung
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.RecipeSO
+  displayNameThai: "\u0E1B\u0E25\u0E32\u0E19\u0E36\u0E48\u0E07\u0E01\u0E31\u0E1A\u0E02\u0E49\u0E32\u0E27\u0E01\u0E25\u0E49\u0E2D\u0E07"
+  displayNameEng: Steamed Fish with Brown Rice
+  customer: 1
+  customerNeed: Low fat, high fibre, filling but light.
+  customerPrefabs:
+  - {fileID: 4299221126510666831, guid: c14cb0a73e5911945b74b968aea0dba5, type: 3}
+  - {fileID: 5402532513274849847, guid: d6fe63f431baa5e4ca65fe0c8130b3cc, type: 3}
+  patienceSeconds: 300
+  components:
+  - ingredient: {fileID: 11400000, guid: 0fb6720b0eadc52489ac78bd34100c47, type: 2}
+    steps:
+    - 1
+    - 6
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 5ae7dc85bbb6c054eaf06dab000f4a15, type: 2}
+    steps:
+    - 0
+    - 1
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 1ae7100ff2159f645b8fa2c54e9953bb, type: 2}
+    steps:
+    - 0
+    - 6
+    portionGrams: 150

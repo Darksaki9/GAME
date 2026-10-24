@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b433e294e24793b6e385b986645642, type: 3}
+  m_Name: Recipe_GaengJuedTaoHu
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.RecipeSO
+  displayNameThai: "\u0E02\u0E49\u0E32\u0E27\u0E44\u0E01\u0E48\u0E22\u0E48\u0E32\u0E07\u0E01\u0E31\u0E1A\u0E41\u0E01\u0E07\u0E08\u0E37\u0E14\u0E40\u0E15\u0E49\u0E32\u0E2B\u0E39\u0E49"
+  displayNameEng: Grilled Chicken Rice with Clear Tofu Soup
+  customer: 4
+  customerNeed: Eats junk food: needs a balanced, low-sodium meal.
+  customerPrefabs:
+  - {fileID: 363066986042772223, guid: a1ebc9caa1ca4b746ada5933bd4394ff, type: 3}
+  - {fileID: 1516296018316081450, guid: 7073b3d824fc65f4987cae1a0d303b82, type: 3}
+  patienceSeconds: 360
+  components:
+  - ingredient: {fileID: 11400000, guid: 16945641488234a49877b5639466cb86, type: 2}
+    steps:
+    - 4
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 07b729f1596a7b741b9e1f4d46d07c62, type: 2}
+    steps:
+    - 1
+    - 5
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 5ae7dc85bbb6c054eaf06dab000f4a15, type: 2}
+    steps:
+    - 0
+    - 1
+    - 5
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 1ae7100ff2159f645b8fa2c54e9953bb, type: 2}
+    steps:
+    - 7
+    portionGrams: 150

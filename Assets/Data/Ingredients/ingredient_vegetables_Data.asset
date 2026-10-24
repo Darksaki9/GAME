@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_vegetables_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_vegetables
+  displayNameThai: "\u0E1C\u0E31\u0E01\u0E23\u0E27\u0E21"
+  displayNameEng: Mixed Vegetables
+  nutritionRoleThai: "\u0E43\u0E22\u0E2D\u0E32\u0E2B\u0E32\u0E23 \u0E27\u0E34\u0E15\u0E32\u0E21\u0E34\u0E19
+    \u0E41\u0E25\u0E30\u0E41\u0E23\u0E48\u0E18\u0E32\u0E15\u0E38 \u0E0A\u0E48\u0E27\u0E22\u0E23\u0E30\u0E1A\u0E1A\u0E02\u0E31\u0E1A\u0E16\u0E48\u0E32\u0E22"
+  category: 2
+  cookingRole: 2
+  calories: 45
+  carbohydrates: 9
+  protein: 2.4
+  fat: 0.4
+  fiber: 3.6
+  sodium: 35
+  costPerUnit: 20
+  isRawMeat: 0
+  safeCoreTempC: 0
+  heatSensitivity: 0.9
+  prefab: {fileID: 6559475266066795215, guid: cdd0b3310f72cb84d814f97b1538fb2c, type: 3}
+  themeColor: {r: 0.32, g: 0.68, b: 0.3, a: 1}

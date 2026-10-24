@@ -1,0 +1,104 @@
+# MTL file for Thai Food Dishes
+
+newmtl Mat_FoodPlate
+Ka 0.3 0.3 0.3
+Kd 0.96 0.96 0.98
+Ks 0.90 0.90 0.90
+Ns 90.0
+
+newmtl Mat_RiceMound
+Ka 0.3 0.3 0.3
+Kd 0.94 0.94 0.92
+Ks 0.20 0.20 0.20
+Ns 20.0
+
+newmtl Mat_RicePorridge
+Ka 0.35 0.35 0.35
+Kd 0.92 0.92 0.88
+Ks 0.50 0.50 0.50
+Ns 45.0
+
+newmtl Mat_BrownRice
+Ka 0.25 0.22 0.18
+Kd 0.65 0.52 0.40
+Ks 0.20 0.20 0.20
+Ns 25.0
+
+newmtl Mat_FriedRice
+Ka 0.3 0.25 0.15
+Kd 0.88 0.72 0.42
+Ks 0.40 0.35 0.25
+Ns 35.0
+
+newmtl Mat_CookedChicken
+Ka 0.25 0.22 0.20
+Kd 0.88 0.82 0.72
+Ks 0.30 0.30 0.30
+Ns 30.0
+
+newmtl Mat_GrilledChicken
+Ka 0.25 0.18 0.10
+Kd 0.76 0.48 0.22
+Ks 0.45 0.35 0.20
+Ns 40.0
+
+newmtl Mat_GrillMark
+Ka 0.1 0.08 0.05
+Kd 0.25 0.14 0.08
+Ks 0.15 0.15 0.15
+Ns 15.0
+
+newmtl Mat_EggYolk
+Ka 0.35 0.25 0.05
+Kd 0.98 0.65 0.08
+Ks 0.60 0.50 0.30
+Ns 55.0
+
+newmtl Mat_EggWhite
+Ka 0.3 0.3 0.3
+Kd 0.95 0.95 0.95
+Ks 0.70 0.70 0.70
+Ns 60.0
+
+newmtl Mat_SteamedFish
+Ka 0.3 0.3 0.3
+Kd 0.90 0.88 0.85
+Ks 0.40 0.40 0.40
+Ns 40.0
+
+newmtl Mat_Broccoli
+Ka 0.15 0.25 0.10
+Kd 0.22 0.52 0.18
+Ks 0.25 0.25 0.25
+Ns 25.0
+
+newmtl Mat_Carrot
+Ka 0.3 0.15 0.05
+Kd 0.95 0.45 0.08
+Ks 0.40 0.35 0.30
+Ns 35.0
+
+newmtl Mat_Vegetables
+Ka 0.2 0.3 0.15
+Kd 0.45 0.72 0.30
+Ks 0.35 0.35 0.35
+Ns 30.0
+
+newmtl Mat_Tofu
+Ka 0.35 0.35 0.35
+Kd 0.94 0.92 0.88
+Ks 0.30 0.30 0.30
+Ns 25.0
+
+newmtl Mat_ChineseCabbage
+Ka 0.25 0.35 0.20
+Kd 0.70 0.85 0.60
+Ks 0.35 0.35 0.35
+Ns 30.0
+
+newmtl Mat_SoupBroth
+Ka 0.3 0.28 0.20
+Kd 0.85 0.78 0.55
+Ks 0.85 0.85 0.85
+Ns 80.0
+

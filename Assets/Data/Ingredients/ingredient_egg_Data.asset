@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_egg_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_egg
+  displayNameThai: "\u0E44\u0E02\u0E48\u0E44\u0E01\u0E48"
+  displayNameEng: Chicken Egg
+  nutritionRoleThai: "\u0E42\u0E1B\u0E23\u0E15\u0E35\u0E19\u0E2A\u0E21\u0E1A\u0E39\u0E23\u0E13\u0E4C\u0E41\u0E25\u0E30\u0E2A\u0E32\u0E23\u0E2D\u0E32\u0E2B\u0E32\u0E23\u0E2B\u0E25\u0E32\u0E22\u0E0A\u0E19\u0E34\u0E14"
+  category: 1
+  cookingRole: 1
+  calories: 72
+  carbohydrates: 0.4
+  protein: 6.3
+  fat: 4.8
+  fiber: 0
+  sodium: 71
+  costPerUnit: 6
+  isRawMeat: 0
+  safeCoreTempC: 71
+  heatSensitivity: 0.3
+  prefab: {fileID: 3052615880442906514, guid: 709c5ca613951fd42a0123ab0ac9d00d, type: 3}
+  themeColor: {r: 0.98, g: 0.75, b: 0.2, a: 1}

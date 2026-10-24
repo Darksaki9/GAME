@@ -1,0 +1,43 @@
+# MTL file for Vintage Electric Rice Cooker
+
+newmtl Mat_CookerBody
+Ka 0.2 0.2 0.2
+Kd 0.49 0.65 0.55
+Ks 0.25 0.25 0.25
+Ns 35.0
+illum 2
+
+newmtl Mat_CookerLid
+Ka 0.3 0.3 0.3
+Kd 0.86 0.88 0.90
+Ks 0.92 0.92 0.95
+Ns 90.0
+illum 2
+
+newmtl Mat_CookerPlastic
+Ka 0.05 0.05 0.05
+Kd 0.12 0.12 0.12
+Ks 0.30 0.30 0.30
+Ns 40.0
+illum 2
+
+newmtl Mat_CookerFaceplate
+Ka 0.25 0.25 0.25
+Kd 0.78 0.80 0.82
+Ks 0.70 0.70 0.70
+Ns 60.0
+illum 2
+
+newmtl Mat_CookerIndicator
+Ka 0.3 0.15 0.05
+Kd 0.98 0.58 0.10
+Ks 0.80 0.80 0.80
+Ns 60.0
+illum 2
+
+newmtl Mat_CookerRim
+Ka 0.2 0.2 0.2
+Kd 0.88 0.88 0.90
+Ks 0.90 0.90 0.90
+Ns 80.0
+illum 2

@@ -1,0 +1,9 @@
+# Material file for Plate
+
+newmtl Mat_Plate_Ceramic
+Kd 0.9500 0.9600 0.9700
+Ks 0.6500 0.6500 0.6500
+Ns 110.0
+d 1.00
+illum 2
+

@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7493423578746236541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531221670147193168}
+  - component: {fileID: 7674491919373818326}
+  - component: {fileID: 3529038969334006536}
+  - component: {fileID: 6189657471507388590}
+  m_Layer: 0
+  m_Name: NPC_Elderly_Male
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &531221670147193168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493423578746236541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7674491919373818326
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493423578746236541}
+  m_Mesh: {fileID: 4300000, guid: f229cc9585ef27244b7a9457efcfc679, type: 2}
+--- !u!23 &3529038969334006536
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493423578746236541}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1befcf1b472db9d4b9265b0f0ea35452, type: 2}
+  - {fileID: 2100000, guid: c618a8d40c1b5834ca49a1ba698b9b20, type: 2}
+  - {fileID: 2100000, guid: 6344e9e9a236e1647adb69e4c1fc52f7, type: 2}
+  - {fileID: 2100000, guid: 1f7e1890315cceb4b96a9d4cc88d6411, type: 2}
+  - {fileID: 2100000, guid: d10bc1c72795dcf4594f0fee6dcf7c7c, type: 2}
+  - {fileID: 2100000, guid: ea242aa095cbec94e8d528e7639dcbec, type: 2}
+  - {fileID: 2100000, guid: 3f271dcc9c9e51c408d8de95cb892eb5, type: 2}
+  - {fileID: 2100000, guid: ade68fef59c47d74fba985a54275974a, type: 2}
+  - {fileID: 2100000, guid: 399ef7fbd08674344bf0cc7066ff390d, type: 2}
+  - {fileID: 2100000, guid: 93275b8e978663e45a0abb95221d9536, type: 2}
+  - {fileID: 2100000, guid: 5f998564b13eb7340834699e98ca5abc, type: 2}
+  - {fileID: 2100000, guid: d3a1be35a82194a4db98e8f2ea4cabf5, type: 2}
+  - {fileID: 2100000, guid: 156f9c94c1edf90468df3b0a227986f9, type: 2}
+  - {fileID: 2100000, guid: f7774b0cb2defdc4296f8d49487183f8, type: 2}
+  - {fileID: 2100000, guid: 4d827202857f90e4db958cff15027aa3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6189657471507388590
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7493423578746236541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.91585445, y: 1.7924, z: 0.65513104}
+  m_Center: {x: 0, y: 0.8962, z: 0.019765556}

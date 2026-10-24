@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b433e294e24793b6e385b986645642, type: 3}
+  m_Name: Recipe_KhaoPadGai
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.RecipeSO
+  displayNameThai: "\u0E02\u0E49\u0E32\u0E27\u0E1C\u0E31\u0E14\u0E44\u0E01\u0E48\u0E43\u0E2A\u0E48\u0E44\u0E02\u0E48\u0E41\u0E25\u0E30\u0E1C\u0E31\u0E01"
+  displayNameEng: Chicken Fried Rice with Egg and Vegetables
+  customer: 2
+  customerNeed: Growing kids need a bit of everything, not too oily.
+  customerPrefabs:
+  - {fileID: 7916218214418282746, guid: 9d6e798cfe9a8c24bac27ed2fb3b3f2b, type: 3}
+  - {fileID: 158422055444009943, guid: d0010c4681d9a8645b8e32ef01e5936e, type: 3}
+  patienceSeconds: 360
+  components:
+  - ingredient: {fileID: 11400000, guid: 16945641488234a49877b5639466cb86, type: 2}
+    steps:
+    - 1
+    - 3
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 5ae7dc85bbb6c054eaf06dab000f4a15, type: 2}
+    steps:
+    - 0
+    - 1
+    - 3
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 1ae7100ff2159f645b8fa2c54e9953bb, type: 2}
+    steps:
+    - 3
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 44c37f2ecd55ceb4aa0ca5c427e326ae, type: 2}
+    steps:
+    - 3
+    portionGrams: 150

@@ -1,0 +1,9 @@
+Library/
+Temp/
+Logs/
+UserSettings/
+obj/
+*.bak
+_upload.tar
+_publish_*.tar
+Assets/Package04_Free_Kitchen/

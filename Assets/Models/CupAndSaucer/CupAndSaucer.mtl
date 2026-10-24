@@ -1,0 +1,8 @@
+# MTL file for Modern Ceramic Cup and Saucer Set
+
+newmtl Mat_WhitePorcelain
+Ka 0.3 0.3 0.3
+Kd 0.96 0.97 0.98
+Ks 0.95 0.95 0.95
+Ns 100.0
+illum 2

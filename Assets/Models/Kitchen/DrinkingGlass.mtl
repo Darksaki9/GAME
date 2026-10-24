@@ -1,0 +1,9 @@
+# Material file for DrinkingGlass
+
+newmtl Mat_DrinkingGlass
+Kd 0.9200 0.9600 0.9800
+Ks 0.9500 0.9500 0.9500
+Ns 220.0
+d 0.35
+illum 2
+

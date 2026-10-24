@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_broth_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_broth
+  displayNameThai: "\u0E19\u0E49\u0E33\u0E0B\u0E38\u0E1B"
+  displayNameEng: Soup Stock / Broth
+  nutritionRoleThai: "\u0E43\u0E0A\u0E49\u0E43\u0E19\u0E40\u0E21\u0E19\u0E39\u0E15\u0E49\u0E21\u0E41\u0E25\u0E30\u0E41\u0E01\u0E07\u0E08\u0E37\u0E14
+    \u0E40\u0E1E\u0E34\u0E48\u0E21\u0E04\u0E27\u0E32\u0E21\u0E01\u0E25\u0E21\u0E01\u0E25\u0E48\u0E2D\u0E21"
+  category: 5
+  cookingRole: 5
+  calories: 20
+  carbohydrates: 1.2
+  protein: 2
+  fat: 0.5
+  fiber: 0
+  sodium: 240
+  costPerUnit: 15
+  isRawMeat: 0
+  safeCoreTempC: 0
+  heatSensitivity: 0.2
+  prefab: {fileID: 4570447159605318753, guid: e299cdf838bc083459dd23cc205f56d8, type: 3}
+  themeColor: {r: 0.35, g: 0.6, b: 0.7, a: 1}

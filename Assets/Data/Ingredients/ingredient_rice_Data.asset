@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_rice_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_rice
+  displayNameThai: "\u0E02\u0E49\u0E32\u0E27\u0E2A\u0E32\u0E23\u0E41\u0E25\u0E30\u0E02\u0E49\u0E32\u0E27\u0E01\u0E25\u0E49\u0E2D\u0E07"
+  displayNameEng: White & Brown Rice
+  nutritionRoleThai: "\u0E41\u0E2B\u0E25\u0E48\u0E07\u0E04\u0E32\u0E23\u0E4C\u0E42\u0E1A\u0E44\u0E2E\u0E40\u0E14\u0E23\u0E15\u0E2B\u0E25\u0E31\u0E01
+    \u0E43\u0E2B\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E07\u0E32\u0E19\u0E41\u0E01\u0E48\u0E23\u0E48\u0E32\u0E07\u0E01\u0E32\u0E22"
+  category: 0
+  cookingRole: 0
+  calories: 130
+  carbohydrates: 28
+  protein: 2.7
+  fat: 0.3
+  fiber: 1.8
+  sodium: 2
+  costPerUnit: 10
+  isRawMeat: 0
+  safeCoreTempC: 0
+  heatSensitivity: 0.2
+  prefab: {fileID: 7089290031383640533, guid: f7d8631087437a042aeae03c07f92195, type: 3}
+  themeColor: {r: 0.85, g: 0.72, b: 0.52, a: 1}

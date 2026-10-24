@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db75a2f4012342ee9466bd80a46a6eae, type: 3}
+  m_Name: IngredientLibrary
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientLibrary
+  ingredients:
+  - {fileID: 11400000, guid: 1ae7100ff2159f645b8fa2c54e9953bb, type: 2}
+  - {fileID: 11400000, guid: 16945641488234a49877b5639466cb86, type: 2}
+  - {fileID: 11400000, guid: 44c37f2ecd55ceb4aa0ca5c427e326ae, type: 2}
+  - {fileID: 11400000, guid: 0fb6720b0eadc52489ac78bd34100c47, type: 2}
+  - {fileID: 11400000, guid: 07b729f1596a7b741b9e1f4d46d07c62, type: 2}
+  - {fileID: 11400000, guid: 5ae7dc85bbb6c054eaf06dab000f4a15, type: 2}
+  - {fileID: 11400000, guid: 6172592191039af42b8e5e75863c1287, type: 2}
+  - {fileID: 11400000, guid: 529dd3678b5e53848980f2d8f0e1efc8, type: 2}
+  - {fileID: 11400000, guid: abf705717ad6ba14a9ca5b321bb2f5fa, type: 2}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c373b285649866346abad82b08ab4d79, type: 3}
+  m_Name: ingredient_fish_Data
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.IngredientData
+  ingredientId: ingredient_fish
+  displayNameThai: "\u0E40\u0E19\u0E37\u0E49\u0E2D\u0E1B\u0E25\u0E32"
+  displayNameEng: Fish Meat
+  nutritionRoleThai: "\u0E42\u0E1B\u0E23\u0E15\u0E35\u0E19\u0E22\u0E48\u0E2D\u0E22\u0E07\u0E48\u0E32\u0E22\u0E41\u0E25\u0E30\u0E01\u0E23\u0E14\u0E44\u0E02\u0E21\u0E31\u0E19\u0E14\u0E35
+    (Omega-3)"
+  category: 1
+  cookingRole: 1
+  calories: 142
+  carbohydrates: 0
+  protein: 24
+  fat: 4.5
+  fiber: 0
+  sodium: 60
+  costPerUnit: 45
+  isRawMeat: 1
+  safeCoreTempC: 63
+  heatSensitivity: 0.4
+  prefab: {fileID: 6122067956959633275, guid: 7c06a2f2e60e7854bbd3a61ef8a538ee, type: 3}
+  themeColor: {r: 0.98, g: 0.52, b: 0.4, a: 1}

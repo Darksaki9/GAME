@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b433e294e24793b6e385b986645642, type: 3}
+  m_Name: Recipe_KhaoGaiYang
+  m_EditorClassIdentifier: Assembly-CSharp::NutritionKitchen.Crafting.RecipeSO
+  displayNameThai: "\u0E02\u0E49\u0E32\u0E27\u0E44\u0E01\u0E48\u0E22\u0E48\u0E32\u0E07\u0E01\u0E31\u0E1A\u0E44\u0E02\u0E48\u0E15\u0E49\u0E21"
+  displayNameEng: Grilled Chicken Rice with Boiled Egg
+  customer: 3
+  customerNeed: Hard physical work: high energy and protein, big rice portion.
+  customerPrefabs:
+  - {fileID: 7603016931221944063, guid: 87910cc197a6e34488f39d87bf358915, type: 3}
+  - {fileID: 5435694251107269530, guid: a976040e7f1a18643bc24a4b7473d732, type: 3}
+  patienceSeconds: 300
+  components:
+  - ingredient: {fileID: 11400000, guid: 16945641488234a49877b5639466cb86, type: 2}
+    steps:
+    - 2
+    - 4
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 44c37f2ecd55ceb4aa0ca5c427e326ae, type: 2}
+    steps:
+    - 5
+    portionGrams: 150
+  - ingredient: {fileID: 11400000, guid: 1ae7100ff2159f645b8fa2c54e9953bb, type: 2}
+    steps:
+    - 7
+    portionGrams: 250

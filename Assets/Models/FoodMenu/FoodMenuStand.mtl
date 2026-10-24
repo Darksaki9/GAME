@@ -1,0 +1,20 @@
+# MTL file for Food Menu Stand
+
+newmtl Mat_MenuWood
+Ka 0.2 0.2 0.2
+Kd 0.45 0.28 0.16
+Ks 0.20 0.20 0.20
+Ns 30.0
+
+newmtl Mat_MenuCard
+Ka 0.4 0.4 0.4
+Kd 1.0 1.0 1.0
+Ks 0.1 0.1 0.1
+Ns 15.0
+map_Kd FoodMenu_Texture.png
+
+newmtl Mat_MenuBrass
+Ka 0.3 0.25 0.1
+Kd 0.85 0.70 0.25
+Ks 0.90 0.80 0.40
+Ns 75.0
